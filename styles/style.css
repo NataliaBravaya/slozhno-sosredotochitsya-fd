@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
     background-color: var(--color-background);
     font-family: var(--font) , Courier, monospace;
@@ -76,7 +74,7 @@
 
 .header__rec {
     position: absolute;
-    visibility: visible;
+    visibility: var(--visibility);
     color: var(--color-button);
     text-transform: uppercase;
     inset-block-start: var(--padding);
@@ -86,7 +84,7 @@
 .header__rec::after {
     content: "";
     position: absolute;
-    visibility: visible;
+    visibility: var(--visibility);
     block-size: 5px;
     inline-size: 5px;
     border-radius: 50%;
@@ -119,6 +117,7 @@
 
 .header__theme-menu-button_active {
     outline: 1px solid var(--color-button);
+    pointer-events: none;
 
 }
 

@@ -1,9 +1,3 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
     --image-background: url("../images/cover-image-dark.png");
     --color-button: #FF0070;
@@ -16,20 +10,25 @@
     --color-article-header: #DB00FF;
     --color-article: #000028;
     --color-background: #000028;
+    --visibility: visible;
 
 }
 
-.theme-dark .page {
-    --image-background: url("../images/cover-image-dark.png");
-    --color-button: #FF0070;
-    --color-header-section: #FF0070;
-    --color-shadow: #FF0070;
-    --color-link-shadow: #FF0070;
-    --color-background-article: #FF0070;
-    --color-hover-border-button: #FF007060;
-    --color-text: #F1B2CE;
-    --color-article-header: #DB00FF;
-    --color-article: #000028;
-    --color-background: #000028;
 
+@media (prefers-color-scheme: dark) {
+    :root.theme-dark {
+        --image-background: url("../images/cover-image-dark.png");
+        --color-button: #FF0070;
+        --color-header-section: #FF0070;
+        --color-shadow: #FF0070;
+        --color-link-shadow: #FF0070;
+        --color-background-article: #FF0070;
+        --color-hover-border-button: #FF007060;
+        --color-text: #F1B2CE;
+        --color-article-header: #DB00FF;
+        --color-article: #000028;
+        --color-background: #000028;
+        --visibility: visible;
+
+    }
 }
