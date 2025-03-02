@@ -16,11 +16,11 @@
 
 
 @media (prefers-color-scheme: light) {
-    :root.theme-light {
+    :root {
         --image-background: url("../images/cover-image-light.png");
         --color-button: #353430;
         --color-header-section: #353430;
-        --color-shadow: #353430;
+        --color-shadow: #FF8DCB;
         --color-link-shadow: #FF8DCB;
         --color-background-article: #FF8DCB;
         --color-hover-border-button: #32312D60;
@@ -29,6 +29,5 @@
         --color-article: #353430;
         --color-background: #FF8DCB;
         --visibility: hidden;
-
     }
 }
